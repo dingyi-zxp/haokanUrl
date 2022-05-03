@@ -40,7 +40,7 @@ if __name__ == "__main__":
     search = input('请输入想查找的视频：')
     num = int(input('请输入需要多少的视频链接(10 * )'))
     print("-L- 只能获取大概的数量")
-    list_url = selectVideoSearch('黄瓜', num)
+    list_url = selectVideoSearch(search, num)
     video_url = videoUrl(list_url)
     print(len(video_url))
     f = open('./urlVideo.txt', 'w')
